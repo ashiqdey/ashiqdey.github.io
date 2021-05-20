@@ -1,0 +1,54 @@
+<html class="fa-events-icons-failed"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ashiq Dey - Portfolio</title>
+
+<style class="cp-pen-styles">* { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; } html, body { height: 100%; margin: 0;padding:0; width: 100%; } body { font: 20px "Monaco", Inconsolata, monospace; /*background: #37474F;*/ color: #f8f8f8; background: url("bg.jpg") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; } .terminal { background: transparent; position: absolute; left: 50%; top: 50%; margin-top: -50px; margin-left: -150px; text-shadow: 0px 0px 5px rgba(100, 100, 100, 0.4); width: 350px; font: inherit; border: none; outline: none; color: inherit; } .dollar:before { content: '$'; color: #00BCD4; } .home { color: #e28d47; padding-bottom: 3px; } a { font: 18px "Monaco", Inconsolata, monospace; text-decoration: underline; color: #64b5f6; } a:hover{ color: #B2EBF2; }</style>
+
+  <div class="terminal">
+    <span class="dollar"></span> Hi There, I'm Ashiq Dey
+    <br>
+    <span class="dollar"></span> Full stack developer
+    <br>
+    <span class="dollar"></span> UI/UX researcher
+    <br>
+<span class="dollar"></span> Graphics designer
+    <br>
+    <span class="dollar"></span> From India
+    <br></div>
+<div style="
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 49, 58, 0);
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>$.fn.typewriter = function() {
+  this.each(function() {
+    var c = $(this),
+      b = c.html(),
+      a = 0,
+      d = 0;
+    c.html("");
+    var e = function() {
+      if ("<" == b.substring(a, a + 1)) {
+        var f = new RegExp(/<span class="instant"/),
+          g = new RegExp(/<span class="clear"/);
+        if (b.substring(a, b.length).match(f)) a += b.substring(a, b.length).indexOf("</span>") + 7;
+        else if (b.substring(a, b.length).match(g)) d = a, a += b.substring(a, b.length).indexOf("</span>") + 7;
+        else
+          for (;
+            ">" != b.substring(a, a + 1);) a++
+      }
+      c.html(b.substring(d, a++) + (a & 1 ? "_" : ""));
+      a >= b.length || setTimeout(e, 70 + 100 *
+        Math.random())
+    };
+    e()
+  });
+  return this
+};
+$(".terminal").typewriter();
+</script>
+</body></html>
